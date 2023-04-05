@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exponential Growth Calculator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Exponential Growth Calculator</h1>
+		<form>
+			<label for="numClients">Number of Clients:</label>
+			<input type="number" id="numClients" required>
+			<br>
+			<label for="avgTransaction">Average Transaction Value:</label>
+			<input type="number" id="avgTransaction" required>
+			<br>
+			<label for="repurchaseFreq">Frequency of Repurchase:</label>
+			<input type="number" id="repurchaseFreq" required>
+			<br>
+			<label for="totalRevenue">Total Revenue:</label>
+			<input type="text" id="totalRevenue" readonly>
+			<br>
+			<label for="slider1">Increase # of Clients by:</label>
+			<input type="range" min="0" max="100" value="0" class="slider" id="slider1">
+			<label for="slider2">Increase Average Transaction Value by:</label>
+			<input type="range" min="0" max="100" value="0" class="slider" id="slider2">
+			<label for="slider3">Increase Frequency of Repurchase by:</label>
+			<input type="range" min="0" max="100" value="0" class="slider" id="slider3">
+			<br>
+			<label for="newRevenue1">New Total Revenue (with slider 1):</label>
+			<input type="text" id="newRevenue1" readonly>
+			<br>
+			<label for="newRevenue2">New Total Revenue (with slider 2):</label>
+			<input type="text" id="newRevenue2" readonly>
+			<br>
+			<label for="newRevenue3">New Total Revenue (with slider 3):</label>
+			<input type="text" id="newRevenue3" readonly>
+			<br>
+		</form>
+		<div id="liveDisplay"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
